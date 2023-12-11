@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Registrate</title>
+  </head>
+  <body class="bg-sky-900 m-2">
+    <div class="flex justify-between">
+      <div>
+        <img
+          src="https://cinecenter.com.bo/images/icons/logo.png"
+          alt="logo"
+          class="w-28 h-24"
+        />
+      </div>
+      <div>
+        <ul class="flex mt-3 justify-end">
+          <li class="mx-6">
+            <a
+              class="text-green-600 hover:text-blue-600 hover:text-2xl"
+              href="index.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="mr-6">
+            <a
+              class="text-green-600 hover:text-blue-600 hover:text-2xl"
+              href="cartelera-flex.html"
+              >Cartelera Flex</a
+            >
+          </li>
+          <li class="mr-6">
+            <a
+              class="text-green-600 hover:text-blue-600 hover:text-2xl"
+              href="cartelera-grid.html"
+              >Cartelera Grid</a
+            >
+          </li>
+          <li class="mr-6">
+            <a class="text-green-600 hover:text-blue-600 hover:text-2xl" href=""
+              >Cines</a
+            >
+          </li>
+        </ul>
+        </div>
+        <div>
+          <ul class="flex mt-3">
+          <li class="mr-6">
+            <a
+              class="p-1 bg-green-800 rounded-md text-red-300 hover:text-orange-600 hover:text-2xl"
+              href="registrate.html"
+              >Registrate</a
+            >
+          </li>
+          <li class="mr-6">
+            <a
+              class="p-1 bg-green-800 rounded-md text-red-300 hover:text-orange-600 hover:text-2xl"
+              href="login.html"
+              >Ingresar</a
+            >
+          </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <h1 class="text-center text-4xl">DATOS PERSONALES</h1>
+    <br />
+    <form class="flex justify-center">
+      <table>
+        <tr>
+          <td>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Ingrese su Nombre"
+              class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Apellido Paterno"
+              class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Apellido Materno"
+              class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select
+              name="documento"
+              id="documento"
+              class="bg-slate-500 p-1 rounded-lg text-purple-950"
+            >
+              <option value="0">Tipo de Documento</option>
+              <option value="ci">CI</option>
+              <option value="nit">NIT</option>
+              <option value="otro">Otro</option>
+            </select>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="numdocumento"
+              placeholder="Numero de Documento"
+              class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="rb_masculino" class="text-indigo-300">Masculino</label>
+            <input type="radio" name="rb_genero" id="rb_masculino" />
+          </td>
+          <td>
+            <label for="rb_femenino" class="text-indigo-300">Femenino</label>
+            <input type="radio" name="rb_genero" id="rb_femenino" />
+          </td>
+          <td>
+            <label for="rb_masculino" class="text-indigo-300">Elle</label>
+            <input type="radio" name="rb_genero" id="rb_Otro" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="direccion" class="text-cyan-100"
+              >Ingrese su Direccion</label
+            >
+            <br />
+            <textarea
+              name="direccion"
+              id="direccion"
+              cols=""
+              rows=""
+              class="mt-1 p-1 bg-slate-500 text-lime-200"
+            >
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="number"
+              name="telefono"
+              placeholder="Ingrese su Telefono"
+              class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="date"
+              name="fecha"
+              class="p-1 bg-slate-500 rounded-lg text-purple-950"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="email"
+              name="correo"
+              placeholder="Correo Electronico"
+              class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="password"
+              name="password"
+              placeholder="Confirmar Password"
+              class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="submit"
+              value="Guardar"
+              class="p-1 bg-green-500 rounded-lg hover:bg-green-300"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Iniciar Sesion</title>
+  </head>
+  <body class="bg-sky-900 m-2">
+    <div class="flex justify-between">
+      <div>
+        <img
+          src="https://cinecenter.com.bo/images/icons/logo.png"
+          alt="logo"
+          class="w-28 h-24"
+        />
+      </div>
+      <div>
+        <ul class="flex mt-3 justify-end">
+          <li class="mx-6">
+            <a
+              class="text-green-600 hover:text-blue-600 hover:text-2xl"
+              href="index.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="mr-6">
+            <a
+              class="text-green-600 hover:text-blue-600 hover:text-2xl"
+              href="cartelera-flex.html"
+              >Cartelera Flex</a
+            >
+          </li>
+          <li class="mr-6">
+            <a
+              class="text-green-600 hover:text-blue-600 hover:text-2xl"
+              href="cartelera-grid.html"
+              >Cartelera Grid</a
+            >
+          </li>
+          <li class="mr-6">
+            <a class="text-green-600 hover:text-blue-600 hover:text-2xl" href=""
+              >Cines</a
+            >
+          </li>
+        </ul>
+        </div>
+        <div>
+          <ul class="flex mt-3">
+          <li class="mr-6">
+            <a
+              class="p-1 bg-green-800 rounded-md text-red-300 hover:text-orange-600 hover:text-2xl"
+              href="registrate.html"
+              >Registrate</a
+            >
+          </li>
+          <li class="mr-6">
+            <a
+              class="p-1 bg-green-800 rounded-md text-red-300 hover:text-orange-600 hover:text-2xl"
+              href="login.html"
+              >Ingresar</a
+            >
+          </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <br />
+    
+    <h1 class="text-center text-3xl">Ingrese sus Datos</h1>
+    <br />
+    <form class="flex flex-col">
+      <div class="m-1 flex justify-center">
+        <select
+          name="ciudad"
+          id="ciudad"
+          class="bg-slate-500 p-1 rounded-lg text-purple-950"
+        >
+          <option value="0">Seleccione Ciudad</option>
+          <option value="Santa Cruz">Santa Cruz</option>
+          <option value="Cochabamba">Cochabamba</option>
+          <option value="Riberalta">Riberalta</option>
+          <option value="Quillacollo">Quillacollo</option>
+          <option value="La Paz">La Paz</option>
+          <option value="La Paz VIP">La Paz VIP</option>
+          <option value="Tarija">Tarija</option>
+        </select>
+      </div>
+      <div class="m-1 flex justify-center">
+        <input
+          type="email"
+          name="email"
+          placeholder="Ingrese su Correo"
+          class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+        />
+      </div>
+      <div class="m-1 flex justify-center">
+        <input
+          type="password"
+          name="password"
+          placeholder="Contrasena"
+          class="p-1 bg-slate-500 rounded-lg placeholder-cyan-100 placeholder:text-start text-lime-200"
+        />
+      </div>
+      <div class="m-1 flex justify-center">
+        <input
+          type="submit"
+          value="Ingresar"
+          class="p-1 bg-yellow-600 rounded-lg hover:bg-green-300"
+        />
+      </div>
+      <div class="m-1 flex justify-center">
+        <input type="button" value="Registrate" class="p-1 bg-green-700 rounded-lg hover:bg-green-300" />
+      </div>
+      <div class="m-1 flex justify-center">
+        <a href="recuperar.html" class="text-rose-400 hover:text-rose-500">Olvidaste tu Contrasena</a>
+      </div>
+    </form>
+  </body>
+</html>
